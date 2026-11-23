@@ -1,0 +1,458 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "dehradun-colleges-starter",
+  "updated_at": "2026-11-23",
+  "verification_status": "unverified_seed",
+  "source_file": "data/colleges_seed.json",
+  "notes": "Imported from the supplied local Dehradun_Colleges_Database.json. Names, categories, locations, programs, and website links have not been independently checked against current official pages.",
+  "records": [
+    {
+      "id": 1,
+      "name": "UPES (University of Petroleum and Energy Studies)",
+      "category": "Private / Deemed University",
+      "location": "Bidholi & Kandoli, Dehradun",
+      "streams": "Engineering, Computer Science, Law, Design, Business, Health Sciences",
+      "website": "https://www.upes.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=1",
+        "listed_website_unverified": "https://www.upes.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Graphic Era (Deemed to be University)",
+      "category": "Private / Deemed University",
+      "location": "Clement Town, Dehradun",
+      "streams": "B.Tech, MBA, Computer Applications, Management, Allied Sciences",
+      "website": "https://geu.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=2",
+        "listed_website_unverified": "https://geu.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Graphic Era Hill University (GEHU)",
+      "category": "Private / Deemed University",
+      "location": "Clement Town, Dehradun",
+      "streams": "Engineering, Management, Pharmacy, Media, Fashion Design",
+      "website": "https://gehu.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=3",
+        "listed_website_unverified": "https://gehu.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 4,
+      "name": "DIT University",
+      "category": "Private / Deemed University",
+      "location": "Mussoorie Diversion Road, Dehradun",
+      "streams": "Engineering, Architecture, Design, Pharmacy, Computing",
+      "website": "https://www.dituniversity.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=4",
+        "listed_website_unverified": "https://www.dituniversity.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Uttaranchal University",
+      "category": "Private / Deemed University",
+      "location": "Premnagar, Dehradun",
+      "streams": "Law, Engineering, Management, Agriculture, Pharmacy, Applied Sciences",
+      "website": "https://www.uudoon.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=5",
+        "listed_website_unverified": "https://www.uudoon.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Quantum University",
+      "category": "Private / Deemed University",
+      "location": "Roorkee-Dehradun Highway (Mandawar)",
+      "streams": "Engineering, Management, Law, Agriculture, Media, Health Sciences",
+      "website": "https://quantumuniversity.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=6",
+        "listed_website_unverified": "https://quantumuniversity.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 7,
+      "name": "IMS Unison University",
+      "category": "Private / Deemed University",
+      "location": "Makkawala Greens, Dehradun",
+      "streams": "Management, Law, Mass Communication, Hospitality",
+      "website": "https://www.iuu.ac",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=7",
+        "listed_website_unverified": "https://www.iuu.ac",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Dev Bhoomi Uttarakhand University (DBUU)",
+      "category": "Private / Deemed University",
+      "location": "Navgaon, Manduwala, Dehradun",
+      "streams": "Engineering, Ayurveda, Pharmacy, Management, Nursing, Architecture",
+      "website": "https://www.dbuu.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=8",
+        "listed_website_unverified": "https://www.dbuu.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 9,
+      "name": "DBS Global University",
+      "category": "Private / Deemed University",
+      "location": "Selaqui, Dehradun",
+      "streams": "Management (PGDM/MBA), Commerce, Computer Applications, Liberal Arts",
+      "website": "https://www.dbsglobaluniversity.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=9",
+        "listed_website_unverified": "https://www.dbsglobaluniversity.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 10,
+      "name": "The ICFAI University, Dehradun",
+      "category": "Private / Deemed University",
+      "location": "Selaqui, Dehradun",
+      "streams": "Law, Management, Engineering, Education",
+      "website": "https://www.iudehradun.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=10",
+        "listed_website_unverified": "https://www.iudehradun.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Tulas University",
+      "category": "Private / Deemed University",
+      "location": "Dhoolkot, Chakrata Road, Dehradun",
+      "streams": "Engineering, Management, Agriculture, Journalism, Computer Applications",
+      "website": "https://tulas.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=11",
+        "listed_website_unverified": "https://tulas.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Shri Guru Ram Rai (SGRR) University",
+      "category": "Private / Deemed University",
+      "location": "Patel Nagar, Dehradun",
+      "streams": "Medical (MBBS), Paramedical, Nursing, Pharmacy, Management, Sciences",
+      "website": "https://www.sgrru.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=12",
+        "listed_website_unverified": "https://www.sgrru.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Swami Rama Himalayan University (SRHU)",
+      "category": "Private / Deemed University",
+      "location": "Jolly Grant, Dehradun",
+      "streams": "Medical (MBBS/MD), Nursing, Paramedical, Engineering, Management, Yoga",
+      "website": "https://srhu.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=13",
+        "listed_website_unverified": "https://srhu.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Sardar Bhagwan Singh University (SBSU)",
+      "category": "Private / Deemed University",
+      "location": "Balawala, Dehradun",
+      "streams": "Pharmacy, Physiotherapy, Biomedical Sciences, Biotechnology",
+      "website": "https://www.sbsuniversity.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=14",
+        "listed_website_unverified": "https://www.sbsuniversity.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Maya Devi University",
+      "category": "Private / Deemed University",
+      "location": "Selaqui, Dehradun",
+      "streams": "Engineering, Pharmacy, Agriculture, Hotel Management, Commerce",
+      "website": "https://maya.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=15",
+        "listed_website_unverified": "https://maya.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Sparsh Himalaya University",
+      "category": "Private / Deemed University",
+      "location": "Doiwala, Dehradun",
+      "streams": "Ayurveda (BAMS), Nursing, Paramedical, Allied Health Sciences",
+      "website": "https://sparshhimalayauniversity.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=16",
+        "listed_website_unverified": "https://sparshhimalayauniversity.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Ras Bihari Bose Subharti University",
+      "category": "Private / Deemed University",
+      "location": "Nanda Ki Chowki, Premnagar, Dehradun",
+      "streams": "Medical, Nursing, Paramedical, Management, Arts & Sciences",
+      "website": "https://www.rbbsu.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=17",
+        "listed_website_unverified": "https://www.rbbsu.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Himgiri Zee University",
+      "category": "Private / Deemed University",
+      "location": "Sherpur, Chakrata Road, Dehradun",
+      "streams": "Media & Journalism, Agriculture, Architecture, Management, Education",
+      "website": "https://www.hzu.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=18",
+        "listed_website_unverified": "https://www.hzu.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "private_deemed"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Doon University",
+      "category": "State Government University",
+      "location": "Mothrowala Road, Kedarpur, Dehradun",
+      "streams": "Foreign Languages, Environmental Science, Economics, Design, Media",
+      "website": "https://www.doonuniversity.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=19",
+        "listed_website_unverified": "https://www.doonuniversity.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Government Doon Medical College (GDMC)",
+      "category": "State Government Medical College",
+      "location": "Dehrakhas, Patel Nagar, Dehradun",
+      "streams": "MBBS, MD/MS, Paramedical Sciences",
+      "website": "https://gdmcuk.com",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=20",
+        "listed_website_unverified": "https://gdmcuk.com",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 21,
+      "name": "IHM Dehradun (Institute of Hotel Management)",
+      "category": "Central Government Institute",
+      "location": "Garhi Cantt, Dehradun",
+      "streams": "Hospitality & Hotel Administration (B.Sc. HHA, Diploma)",
+      "website": "https://www.ihmddn.com",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=21",
+        "listed_website_unverified": "https://www.ihmddn.com",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Dolphin (PG) Institute of Biomedical & Natural Sciences",
+      "category": "Autonomous / Affiliated Institute",
+      "location": "Manduwala, Dehradun",
+      "streams": "Biotechnology, Physiotherapy, Forestry, Agriculture, Microbiology",
+      "website": "https://www.dolphininstitute.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=22",
+        "listed_website_unverified": "https://www.dolphininstitute.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 23,
+      "name": "D.A.V. (P.G.) College",
+      "category": "Government-Aided PG College",
+      "location": "Karanpur, Dehradun",
+      "streams": "Arts, Science, Commerce, Law, Education",
+      "website": "https://www.davpgcollegeddn.ac.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=23",
+        "listed_website_unverified": "https://www.davpgcollegeddn.ac.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 24,
+      "name": "D.B.S. (P.G.) College",
+      "category": "Government-Aided PG College",
+      "location": "Karanpur, Dehradun",
+      "streams": "Science, Arts, Commerce, Microbiology",
+      "website": "https://www.dbscollegedehradun.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=24",
+        "listed_website_unverified": "https://www.dbscollegedehradun.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 25,
+      "name": "M.K.P. (P.G.) College (Women's)",
+      "category": "Government-Aided Women's College",
+      "location": "New Road, Dehradun",
+      "streams": "Arts, Science, Commerce, Education",
+      "website": "https://www.mkpcollege.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=25",
+        "listed_website_unverified": "https://www.mkpcollege.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 26,
+      "name": "JB Institute of Technology (JBIT)",
+      "category": "Private Affiliated Institute",
+      "location": "Shankarpur, Chakrata Road, Dehradun",
+      "streams": "B.Tech, BBA, BCA, Pharmacy, Polytechnic",
+      "website": "https://www.jbitdoon.com",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=26",
+        "listed_website_unverified": "https://www.jbitdoon.com",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Shivalik College of Engineering",
+      "category": "Private Affiliated Institute",
+      "location": "Shimla Bypass Road, Sihniwala, Dehradun",
+      "streams": "B.Tech, BBA, BCA, Pharmacy, Agriculture",
+      "website": "https://shivalikcollege.edu.in",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=27",
+        "listed_website_unverified": "https://shivalikcollege.edu.in",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    },
+    {
+      "id": 28,
+      "name": "BFIT Group of Institutions",
+      "category": "Private Affiliated Institute",
+      "location": "Sudhowala, Chakrata Road, Dehradun",
+      "streams": "Agriculture, Forestry, Management, IT, Mass Communication",
+      "website": "https://www.bfitdoon.com",
+      "provenance": {
+        "source_record": "data/colleges_seed.json#id=28",
+        "listed_website_unverified": "https://www.bfitdoon.com",
+        "verification_status": "unverified",
+        "verified_at": null,
+        "evidence_urls": [],
+        "directory_group": "other"
+      }
+    }
+  ]
+}

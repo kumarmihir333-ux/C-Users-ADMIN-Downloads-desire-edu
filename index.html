@@ -4,82 +4,166 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#040711">
-  <meta name="description" content="Free college guidance for Dehradun. Compare 28 campuses, find programs that fit your stream, and get help from a counsellor.">
+  <meta name="description" content="Explore a starter directory of Dehradun colleges. Search listed programs and verify current details with each institution.">
   <meta property="og:title" content="desired.edu — Find Your College in Dehradun">
-  <meta property="og:description" content="Compare all 28 universities and colleges in Dehradun and get a free shortlist matched to your stream.">
+  <meta property="og:description" content="Explore 28 Dehradun college records and search their listed programs. Verify details with each institution.">
   <meta property="og:type" content="website">
   <title>desired.edu — Find Your College in Dehradun</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
   <link rel="preload" href="https://himalayan-campus-intelligence.lovable.app/media/himalaya-poster.jpg" as="image">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <div class="cinematic" aria-hidden="true">
     <video class="cinematic__video" autoplay muted loop playsinline poster="https://himalayan-campus-intelligence.lovable.app/media/himalaya-poster.jpg">
       <source src="https://himalayan-campus-intelligence.lovable.app/media/himalaya.mp4" type="video/mp4">
     </video>
-    <div class="cinematic__glow"></div><div class="cinematic__shade"></div><div class="cinematic__grain"></div>
+    <div class="cinematic__glow"></div>
+    <div class="cinematic__shade"></div>
+    <div class="cinematic__grain"></div>
   </div>
 
   <header class="topbar" id="top">
     <nav class="nav shell" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="desired.edu home"><span class="brand__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg></span><span>desired.edu</span></a>
-      <div class="nav__links" id="navLinks"><a href="#finder">College Finder</a><a href="#colleges">All Colleges</a><a href="#how">How it works</a><a href="#inquiry">Enquire</a></div>
-      <div class="nav__actions"><button class="button button--small" data-open-counsel>Free counselling</button><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button></div>
+      <a class="brand" href="#top" aria-label="desired.edu home">
+        <span class="brand__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg></span>
+        <span>desired.edu</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#finder">College Finder</a>
+        <a href="#colleges">All Colleges</a>
+        <a href="#how">How it works</a>
+        <a href="#inquiry">Enquire</a>
+      </div>
+      <div class="nav__actions">
+        <button class="button button--small" data-open-coun>Form preview</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
     </nav>
   </header>
 
   <main>
     <section class="hero shell" aria-labelledby="heroTitle">
       <div class="hero__content reveal">
-        <p class="eyebrow glass">College counselling for students <span>·</span> Dehradun, Uttarakhand</p>
+        <p class="eyebrow glass">College finder prototype <span>·</span> Dehradun, Uttarakhand</p>
         <h1 id="heroTitle">Find your college<br>in the <em>Doon valley.</em></h1>
-        <p class="hero__copy">Compare all 28 universities and colleges in Dehradun, get a shortlist matched to your stream, and talk to a real counsellor before you pay a single admission fee.</p>
-        <div class="hero__actions"><a class="button" href="#finder">Find my college <span aria-hidden="true">→</span></a><button class="button button--ghost" data-open-counsel>Free counselling call</button></div>
-        <div class="stats glass" aria-label="Service facts">
-          <div><strong>28</strong><span>colleges compared</span></div><div><strong>18</strong><span>private &amp; deemed universities</span></div><div><strong>10</strong><span>govt &amp; autonomous colleges</span></div><div><strong>₹0</strong><span>counselling fee</span></div>
+        <p class="hero__copy">Explore a starter list of 28 Dehradun institutions and search the programs listed in the dataset. Follow each college link to confirm current courses, fees, eligibility and admission dates.</p>
+        <div class="hero__actions">
+          <a class="button" href="#finder">Explore colleges <span aria-hidden="true">→</span></a>
+          <button class="button button--ghost" data-open-coun>Open form preview</button>
+        </div>
+        <div class="stats glass" aria-label="Directory summary">
+          <div><strong id="summaryCount">28</strong><span>starter records</span></div>
+          <div><strong id="summaryPrivate">18</strong><span>private &amp; deemed universities</span></div>
+          <div><strong id="summaryOther">10</strong><span>other colleges &amp; institutes</span></div>
+          <div><strong>₹0</strong><span>cost to browse</span></div>
         </div>
       </div>
       <a class="scroll-cue" href="#statement" aria-label="Scroll down">↓</a>
     </section>
 
-    <section class="statement section shell" id="statement"><p class="statement__text">Twenty-eight campuses. One valley between the Himalaya and the Shivaliks. <span>We help you choose the one that fits your marks, your budget and the life you want after graduation.</span></p></section>
+    <section class="statement section shell" id="statement">
+      <p class="statement__text">Twenty-eight starter records. One valley between the Himalaya and the Shivaliks. <span>Search listed programs, then verify details directly with the institution before making a decision.</span></p>
+    </section>
 
     <section class="finder section shell" id="finder">
-      <div class="section__intro"><p class="kicker">A clearer place to start</p><h2>Tell us what you want to study.<br><em>We’ll show you where.</em></h2><p>Choose a stream and institution type to find campuses with matching programs.</p></div>
+      <div class="section__intro">
+        <p class="kicker">A clearer place to start</p>
+        <h2>Tell us what you want to study.<br><em>We’ll show you where.</em></h2>
+        <p>Choose a stream and dataset group to search listed program text.</p>
+      </div>
       <div class="finder__layout">
         <div class="finder__panel glass-card">
           <label class="field-label" for="streamSelect"><span class="step">1</span> Your stream</label>
-          <select id="streamSelect" class="select"><option value="Engineering">Engineering</option><option>Computing</option><option>Medical</option><option>Nursing &amp; Health</option><option>Pharmacy</option><option>Management</option><option>Commerce</option><option>Law</option><option>Design &amp; Architecture</option><option>Media &amp; Journalism</option><option>Agriculture &amp; Forestry</option><option>Hospitality</option><option>Sciences</option><option>Arts &amp; Humanities</option><option>Education</option></select>
-          <label class="field-label field-label--second" for="typeSelect"><span class="step">2</span> Type of institution</label>
-          <select id="typeSelect" class="select"><option value="any">Any institution</option><option value="university">Universities</option><option value="public">Govt &amp; autonomous</option></select>
-          <div class="compare-callout"><span class="sparkle">✳</span><div><strong>Want fees, hostel and scholarships compared?</strong><p>Share your 12th %, entrance score and budget. A counsellor can compare options for your shortlist.</p></div></div>
-          <button class="button finder__cta" data-open-counsel>Get my free comparison <span>→</span></button>
+          <select id="streamSelect" class="select">
+            <option value="Engineering">Engineering</option><option>Computing</option><option>Medical</option>
+            <option>Nursing &amp; Health</option><option>Pharmacy</option><option>Management</option><option>Commerce</option>
+            <option>Law</option><option>Design &amp; Architecture</option><option>Media &amp; Journalism</option>
+            <option>Agriculture &amp; Forestry</option><option>Hospitality</option><option>Sciences</option>
+            <option>Arts &amp; Humanities</option><option>Education</option>
+          </select>
+          <label class="field-label field-label--second" for="typeSelect"><span class="step">2</span> Dataset group</label>
+          <select id="typeSelect" class="select">
+            <option value="any">All records</option>
+            <option value="private-deemed">Private &amp; deemed universities</option>
+            <option value="other">Other institutions</option>
+          </select>
+          <div class="compare-callout">
+            <span class="sparkle" aria-hidden="true">✳</span>
+            <div><strong>Fees and scholarships are not in this dataset.</strong><p>This finder matches listed program text only. Verify costs, eligibility and deadlines with each institution.</p></div>
+          </div>
+          <button class="button finder__cta" data-open-coun>Preview enquiry form <span>→</span></button>
         </div>
-        <div class="finder__results"><div class="results-heading"><span id="matchCount">Finding matches…</span><span class="results-heading__label">A starting shortlist</span></div><div id="matchList" class="match-list" aria-live="polite"></div><a class="text-link" href="#colleges">View all colleges <span>→</span></a></div>
+        <div class="finder__results">
+          <div class="results-heading"><span id="matchCount">Loading records…</span><span class="results-heading__label">Text matches only</span></div>
+          <div id="matchList" class="match-list" aria-live="polite"></div>
+          <a class="text-link" href="#colleges">View all records <span>→</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="directory section" id="colleges"><div class="shell">
-      <div class="section__intro"><p class="kicker">Dehradun college directory</p><h2>Every campus in the valley.<br><em>One honest list.</em></h2></div>
-      <div class="directory__controls"><div class="tabs" role="group" aria-label="Filter institutions"><button class="tab is-active" data-filter="all">All <span>28</span></button><button class="tab" data-filter="university">Universities <span>18</span></button><button class="tab" data-filter="public">Govt &amp; autonomous <span>10</span></button></div><label class="search"><span aria-hidden="true">⌕</span><input id="collegeSearch" type="search" placeholder="Search colleges or courses" aria-label="Search colleges or courses"></label></div>
-      <div class="college-grid" id="collegeGrid" aria-live="polite"></div>
-      <p class="data-note">College information is compiled from public sources and may change. Confirm programs, fees, recognition and admission requirements with each institution.</p>
-    </div></section>
+    <section class="directory section" id="colleges">
+      <div class="shell">
+        <div class="section__intro">
+          <p class="kicker">Dehradun college directory</p>
+          <h2>Every record in one place.<br><em>Check before you choose.</em></h2>
+        </div>
+        <p class="dataset-status" id="datasetStatus" role="status">Loading dataset status…</p>
+        <div class="directory__controls">
+          <div class="tabs" role="group" aria-label="Filter institutions">
+            <button class="tab is-active" data-filter="all">All <span id="countAll">—</span></button>
+            <button class="tab" data-filter="private-deemed">Private &amp; deemed <span id="countPrivate">—</span></button>
+            <button class="tab" data-filter="other">Other institutions <span id="countOther">—</span></button>
+          </div>
+          <label class="search"><span aria-hidden="true">⌕</span><input id="collegeSearch" type="search" placeholder="Search colleges or listed programs" aria-label="Search colleges or listed programs"></label>
+        </div>
+        <div class="college-grid" id="collegeGrid" aria-live="polite"></div>
+        <p class="data-note">Data is imported from a local starter file and has not been independently verified. Program matches are text matches, not eligibility advice. Confirm recognition, courses, costs and admissions with the institution.</p>
+      </div>
+    </section>
 
-    <section class="how section shell" id="how"><div class="section__intro"><p class="kicker">A little less guesswork</p><h2>Good decisions start<br><em>with the right questions.</em></h2></div><div class="how__grid"><article class="how-card glass-card"><span class="how-card__number">01</span><div class="how-card__icon">⌕</div><h3>Tell us what matters</h3><p>Your stream, marks, budget, preferred course and the kind of campus life you want.</p></article><article class="how-card glass-card"><span class="how-card__number">02</span><div class="how-card__icon">↗</div><h3>Compare your options</h3><p>See relevant colleges side by side, then check course and cost details with a counsellor.</p></article><article class="how-card glass-card"><span class="how-card__number">03</span><div class="how-card__icon">✳</div><h3>Choose with confidence</h3><p>Get clear next steps for applications, questions to ask and documents to prepare.</p></article></div></section>
+    <section class="how section shell" id="how">
+      <div class="section__intro"><p class="kicker">How this prototype works</p><h2>Simple matching.<br><em>Clear limits.</em></h2></div>
+      <div class="how__grid">
+        <article class="how-card glass-card"><span class="how-card__number">01</span><div class="how-card__icon">⌕</div><h3>Choose a listed stream</h3><p>Pick an interest and the finder searches program text from the local dataset.</p></article>
+        <article class="how-card glass-card"><span class="how-card__number">02</span><div class="how-card__icon">↗</div><h3>Review listed institutions</h3><p>Search the 28 records and open the institution website listed in the source file.</p></article>
+        <article class="how-card glass-card"><span class="how-card__number">03</span><div class="how-card__icon">✓</div><h3>Verify the facts</h3><p>Confirm current courses, fees, admissions and recognition with official sources.</p></article>
+      </div>
+    </section>
 
-    <section class="inquiry section shell" id="inquiry"><div class="inquiry__copy"><p class="kicker">A real person, no pressure</p><h2>Have a question?<br><em>Let’s talk it through.</em></h2><p>Tell us a little about what you’re looking for. We’ll help you map the next step.</p><button class="button" data-open-coun>Request free counselling <span>→</span></button></div><form class="inquiry-form glass-card" id="inquiryForm"><h3>Get a free comparison</h3><p>Share a few details to prepare your shortlist.</p><div class="form-row"><label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label><label>Phone number<input name="phone" required autocomplete="tel" inputmode="tel" placeholder="10-digit mobile"></label></div><div class="form-row"><label>Interested stream<select name="stream"><option>Engineering</option><option>Computing</option><option>Medical</option><option>Nursing &amp; Health</option><option>Management</option><option>Law</option><option>Other</option></select></label><label>Class 12 percentage<input name="marks" type="number" min="0" max="100" placeholder="Optional"></label></div><button class="button" type="submit">Prepare my enquiry <span>→</span></button><p class="form-note" id="formNote">This demo keeps your details in this browser only; it does not send them to a server.</p></form></section>
+    <section class="inquiry section shell" id="inquiry">
+      <div class="inquiry__copy"><p class="kicker">Frontend-only form preview</p><h2>Have a question?<br><em>Plan the next build.</em></h2><p>This prototype has no counsellor, inbox or server connected. The enquiry form demonstrates the future interface only.</p><button class="button" data-open-coun>Open form preview <span>→</span></button></div>
+      <form class="inquiry-form glass-card" id="inquiryForm">
+        <h3>Enquiry form preview</h3><p>Use sample details only; submissions are not delivered.</p>
+        <div class="form-row"><label>Sample name<input name="name" required autocomplete="off" placeholder="Sample name"></label><label>Sample phone<input name="phone" required autocomplete="off" inputmode="tel" placeholder="Sample number"></label></div>
+        <div class="form-row"><label>Interested stream<select name="stream"><option>Engineering</option><option>Computing</option><option>Medical</option><option>Nursing &amp; Health</option><option>Management</option><option>Law</option><option>Other</option></select></label><label>Class 12 percentage<input name="marks" type="number" min="0" max="100" placeholder="Optional sample"></label></div>
+        <button class="button" type="submit">Preview confirmation <span>→</span></button>
+        <p class="form-note" id="formNote">No data is saved or sent. Do not enter real personal information.</p>
+      </form>
+    </section>
 
-    <section class="closing shell"><div class="closing__inner"><p class="kicker">Your next chapter starts here</p><h2>There’s a campus<br>with <em>your name on it.</em></h2><p>Start with a shortlist. Leave with a plan.</p><button class="button" data-open-coun>Let’s find it <span>→</span></button></div></section>
+    <section class="closing shell"><div class="closing__inner"><p class="kicker">Next steps</p><h2>Make the directory<br><em>decision-ready.</em></h2><p>Start by verifying source data and connecting the services this prototype does not have yet.</p><a class="button" href="docs/WHAT_IS_LEFT.md">See the build roadmap <span>→</span></a></div></section>
   </main>
 
-  <footer class="footer"><div class="shell footer__inner"><a class="brand" href="#top"><span class="brand__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg></span><span>desired.edu</span></a><p>Independent college guidance for Dehradun, Uttarakhand.</p><a href="#top">Back to top ↑</a></div><div class="shell footer__legal">College and course details should be confirmed with the institution. Counselling is free.</div></footer>
+  <footer class="footer">
+    <div class="shell footer__inner"><a class="brand" href="#top"><span class="brand__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg></span><span>desired.edu</span></a><p>College directory prototype · Dehradun, Uttarakhand.</p><a href="#top">Back to top ↑</a></div>
+    <div class="shell footer__legal">Seed data is unverified. Forms are not connected and do not transmit details.</div>
+  </footer>
 
-  <dialog class="modal" id="counselModal"><form method="dialog"><button class="modal__close" aria-label="Close">×</button></form><p class="kicker">Free counselling · Dehradun</p><h2>Let’s find the right fit.</h2><p>Tell us where you are in your search and we’ll help you compare the next steps.</p><form class="modal-form" id="modalForm"><label>Your name<input name="name" required placeholder="Full name"></label><label>Phone number<input name="phone" required inputmode="tel" placeholder="10-digit mobile"></label><label>What are you interested in?<select name="stream"><option>Engineering</option><option>Computing</option><option>Medical</option><option>Management</option><option>Law</option><option>Other</option></select></label><button class="button" type="submit">Prepare enquiry <span>→</span></button><small id="modalNote">Your details stay in this browser. This preview does not send them.</small></form></dialog>
+  <dialog class="modal" id="counselModal">
+    <form method="dialog"><button class="modal__close" aria-label="Close">×</button></form>
+    <p class="kicker">Form preview · Dehradun</p><h2>Enquiry workflow preview.</h2><p>This prototype is not connected to a counsellor or service. The form does not send or save submitted details.</p>
+    <form class="modal-form" id="modalForm">
+      <label>Sample name<input name="name" required autocomplete="off" placeholder="Sample name"></label>
+      <label>Sample phone<input name="phone" required autocomplete="off" inputmode="tel" placeholder="Sample number"></label>
+      <label>Interest<select name="stream"><option>Engineering</option><option>Computing</option><option>Medical</option><option>Management</option><option>Law</option><option>Other</option></select></label>
+      <button class="button" type="submit">Preview confirmation <span>→</span></button>
+      <small id="modalNote">No data is saved or sent. Do not enter real personal information.</small>
+    </form>
+  </dialog>
 
-  <script src="app.js" defer></script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
