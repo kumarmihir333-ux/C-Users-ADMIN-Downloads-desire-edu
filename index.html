@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040711">
+  <meta name="description" content="Free college guidance for Dehradun. Compare 28 campuses, find programs that fit your stream, and get help from a counsellor.">
+  <meta property="og:title" content="desired.edu — Find Your College in Dehradun">
+  <meta property="og:description" content="Compare all 28 universities and colleges in Dehradun and get a free shortlist matched to your stream.">
+  <meta property="og:type" content="website">
+  <title>desired.edu — Find Your College in Dehradun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://himalayan-campus-intelligence.lovable.app/media/himalaya-poster.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cinematic" aria-hidden="true">
+    <video class="cinematic__video" autoplay muted loop playsinline poster="https://himalayan-campus-intelligence.lovable.app/media/himalaya-poster.jpg">
+      <source src="https://himalayan-campus-intelligence.lovable.app/media/himalaya.mp4" type="video/mp4">
+    </video>
+    <div class="cinematic__glow"></div><div class="cinematic__shade"></div><div class="cinematic__grain"></div>
+  </div>
+
+  <header class="topbar" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="desired.edu home"><span class="brand__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg></span><span>desired.edu</span></a>
+      <div class="nav__links" id="navLinks"><a href="#finder">College Finder</a><a href="#colleges">All Colleges</a><a href="#how">How it works</a><a href="#inquiry">Enquire</a></div>
+      <div class="nav__actions"><button class="button button--small" data-open-counsel>Free counselling</button><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="heroTitle">
+      <div class="hero__content reveal">
+        <p class="eyebrow glass">College counselling for students <span>·</span> Dehradun, Uttarakhand</p>
+        <h1 id="heroTitle">Find your college<br>in the <em>Doon valley.</em></h1>
+        <p class="hero__copy">Compare all 28 universities and colleges in Dehradun, get a shortlist matched to your stream, and talk to a real counsellor before you pay a single admission fee.</p>
+        <div class="hero__actions"><a class="button" href="#finder">Find my college <span aria-hidden="true">→</span></a><button class="button button--ghost" data-open-counsel>Free counselling call</button></div>
+        <div class="stats glass" aria-label="Service facts">
+          <div><strong>28</strong><span>colleges compared</span></div><div><strong>18</strong><span>private &amp; deemed universities</span></div><div><strong>10</strong><span>govt &amp; autonomous colleges</span></div><div><strong>₹0</strong><span>counselling fee</span></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#statement" aria-label="Scroll down">↓</a>
+    </section>
+
+    <section class="statement section shell" id="statement"><p class="statement__text">Twenty-eight campuses. One valley between the Himalaya and the Shivaliks. <span>We help you choose the one that fits your marks, your budget and the life you want after graduation.</span></p></section>
+
+    <section class="finder section shell" id="finder">
+      <div class="section__intro"><p class="kicker">A clearer place to start</p><h2>Tell us what you want to study.<br><em>We’ll show you where.</em></h2><p>Choose a stream and institution type to find campuses with matching programs.</p></div>
+      <div class="finder__layout">
+        <div class="finder__panel glass-card">
+          <label class="field-label" for="streamSelect"><span class="step">1</span> Your stream</label>
+          <select id="streamSelect" class="select"><option value="Engineering">Engineering</option><option>Computing</option><option>Medical</option><option>Nursing &amp; Health</option><option>Pharmacy</option><option>Management</option><option>Commerce</option><option>Law</option><option>Design &amp; Architecture</option><option>Media &amp; Journalism</option><option>Agriculture &amp; Forestry</option><option>Hospitality</option><option>Sciences</option><option>Arts &amp; Humanities</option><option>Education</option></select>
+          <label class="field-label field-label--second" for="typeSelect"><span class="step">2</span> Type of institution</label>
+          <select id="typeSelect" class="select"><option value="any">Any institution</option><option value="university">Universities</option><option value="public">Govt &amp; autonomous</option></select>
+          <div class="compare-callout"><span class="sparkle">✳</span><div><strong>Want fees, hostel and scholarships compared?</strong><p>Share your 12th %, entrance score and budget. A counsellor can compare options for your shortlist.</p></div></div>
+          <button class="button finder__cta" data-open-counsel>Get my free comparison <span>→</span></button>
+        </div>
+        <div class="finder__results"><div class="results-heading"><span id="matchCount">Finding matches…</span><span class="results-heading__label">A starting shortlist</span></div><div id="matchList" class="match-list" aria-live="polite"></div><a class="text-link" href="#colleges">View all colleges <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="directory section" id="colleges"><div class="shell">
+      <div class="section__intro"><p class="kicker">Dehradun college directory</p><h2>Every campus in the valley.<br><em>One honest list.</em></h2></div>
+      <div class="directory__controls"><div class="tabs" role="group" aria-label="Filter institutions"><button class="tab is-active" data-filter="all">All <span>28</span></button><button class="tab" data-filter="university">Universities <span>18</span></button><button class="tab" data-filter="public">Govt &amp; autonomous <span>10</span></button></div><label class="search"><span aria-hidden="true">⌕</span><input id="collegeSearch" type="search" placeholder="Search colleges or courses" aria-label="Search colleges or courses"></label></div>
+      <div class="college-grid" id="collegeGrid" aria-live="polite"></div>
+      <p class="data-note">College information is compiled from public sources and may change. Confirm programs, fees, recognition and admission requirements with each institution.</p>
+    </div></section>
+
+    <section class="how section shell" id="how"><div class="section__intro"><p class="kicker">A little less guesswork</p><h2>Good decisions start<br><em>with the right questions.</em></h2></div><div class="how__grid"><article class="how-card glass-card"><span class="how-card__number">01</span><div class="how-card__icon">⌕</div><h3>Tell us what matters</h3><p>Your stream, marks, budget, preferred course and the kind of campus life you want.</p></article><article class="how-card glass-card"><span class="how-card__number">02</span><div class="how-card__icon">↗</div><h3>Compare your options</h3><p>See relevant colleges side by side, then check course and cost details with a counsellor.</p></article><article class="how-card glass-card"><span class="how-card__number">03</span><div class="how-card__icon">✳</div><h3>Choose with confidence</h3><p>Get clear next steps for applications, questions to ask and documents to prepare.</p></article></div></section>
+
+    <section class="inquiry section shell" id="inquiry"><div class="inquiry__copy"><p class="kicker">A real person, no pressure</p><h2>Have a question?<br><em>Let’s talk it through.</em></h2><p>Tell us a little about what you’re looking for. We’ll help you map the next step.</p><button class="button" data-open-coun>Request free counselling <span>→</span></button></div><form class="inquiry-form glass-card" id="inquiryForm"><h3>Get a free comparison</h3><p>Share a few details to prepare your shortlist.</p><div class="form-row"><label>Your name<input name="name" required autocomplete="name" placeholder="Full name"></label><label>Phone number<input name="phone" required autocomplete="tel" inputmode="tel" placeholder="10-digit mobile"></label></div><div class="form-row"><label>Interested stream<select name="stream"><option>Engineering</option><option>Computing</option><option>Medical</option><option>Nursing &amp; Health</option><option>Management</option><option>Law</option><option>Other</option></select></label><label>Class 12 percentage<input name="marks" type="number" min="0" max="100" placeholder="Optional"></label></div><button class="button" type="submit">Prepare my enquiry <span>→</span></button><p class="form-note" id="formNote">This demo keeps your details in this browser only; it does not send them to a server.</p></form></section>
+
+    <section class="closing shell"><div class="closing__inner"><p class="kicker">Your next chapter starts here</p><h2>There’s a campus<br>with <em>your name on it.</em></h2><p>Start with a shortlist. Leave with a plan.</p><button class="button" data-open-coun>Let’s find it <span>→</span></button></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell footer__inner"><a class="brand" href="#top"><span class="brand__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg></span><span>desired.edu</span></a><p>Independent college guidance for Dehradun, Uttarakhand.</p><a href="#top">Back to top ↑</a></div><div class="shell footer__legal">College and course details should be confirmed with the institution. Counselling is free.</div></footer>
+
+  <dialog class="modal" id="counselModal"><form method="dialog"><button class="modal__close" aria-label="Close">×</button></form><p class="kicker">Free counselling · Dehradun</p><h2>Let’s find the right fit.</h2><p>Tell us where you are in your search and we’ll help you compare the next steps.</p><form class="modal-form" id="modalForm"><label>Your name<input name="name" required placeholder="Full name"></label><label>Phone number<input name="phone" required inputmode="tel" placeholder="10-digit mobile"></label><label>What are you interested in?<select name="stream"><option>Engineering</option><option>Computing</option><option>Medical</option><option>Management</option><option>Law</option><option>Other</option></select></label><button class="button" type="submit">Prepare enquiry <span>→</span></button><small id="modalNote">Your details stay in this browser. This preview does not send them.</small></form></dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
