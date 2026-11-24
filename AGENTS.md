@@ -14,7 +14,7 @@ Read `docs/ARCHITECTURE.md`, `docs/DATA_MODEL.md`, `docs/AI_AND_EVIDENCE.md`, an
 
 ## Product and code rules
 
-- This prototype has no AI integration or backend. Do not add copy claiming AI, live counselling, submitted enquiries, or current/verified data unless those features are built and supported by evidence.
+- Tulu has a local page-search fallback and an optional Gemini integration through a server-side Netlify function. Never put provider keys in browser code or the repository. Do not claim live AI when the function is not configured. Do not imply live counselling, delivered enquiries, or current/verified data.
 - The enquiry UI is a demo and must not transmit or store personal data. Implement a reviewed privacy, security, retention, and consent design before connecting a real lead system.
 - Keep app modules small, browser-native, and dependency-light. Validate dataset shape and provenance before rendering. Fail closed on invalid or conflicting data.
 - Render record text as text, not untrusted HTML. Use HTTPS for outbound institution links and `rel="noopener noreferrer"` for new tabs.

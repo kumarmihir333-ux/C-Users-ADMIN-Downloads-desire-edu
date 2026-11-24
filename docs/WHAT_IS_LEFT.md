@@ -1,13 +1,13 @@
 # What remains to build
 
-Status: **prototype**. The UI and data plumbing are present; this is not yet an operational counselling service or a verified college guide.
+Status: **prototype with optional Gemini-backed Tulu**. The UI and data plumbing are present; this is not an operational counselling service or a verified college guide.
 
 ## Done
 
 - Responsive static landing page and mobile navigation.
 - Search/filter UI for 28 supplied records.
 - Clear data provenance and unverified status in the dataset.
-- No AI calls, backend, or data submission.
+- Tulu page guide with local search fallback, optional Netlify Gemini function, unverified record links and no API key in browser code.
 - Frontend-only enquiry form preview.
 
 ## Build next (priority order)
@@ -33,12 +33,12 @@ Status: **prototype**. The UI and data plumbing are present; this is not yet an 
 - Validate form inputs on the server and show real success/failure only after confirmed delivery.
 - Add a privacy notice and a team process for responding to enquiries.
 
-### P2 — Add grounded AI only if needed
+### P2 — Prepare Tulu for public use
 
-- Choose a model/provider and decide whether student data may leave the user's device.
-- Implement retrieval from verified records, source citations, strict schema validation and a “no evidence, no claim” fallback.
+- Choose a deployment host and configure `GEMINI_API_KEY` as a server-side Netlify secret to enable live Gemini. GitHub Pages provides local page search only.
+- Keep retrieval limited to the local, unverified records until source facts have been checked.
 - Build a test/evaluation set for unsupported questions, stale facts, conflicting sources, fees and eligibility.
-- Add human review and audit logs before showing advice to students.
+- Add robust rate limits, budget controls and monitoring before broad public use.
 
 ### P2 — Data maintenance
 
@@ -55,4 +55,4 @@ Status: **prototype**. The UI and data plumbing are present; this is not yet an 
 
 ## Not yet included
 
-There are no verified fees, scholarship details, admission deadlines, eligibility calculations, live scraping, AI counsellor, real counsellor, user accounts, persistent database, or delivered enquiry form.
+There are no verified fees, scholarship details, admission deadlines, eligibility calculations, live scraping, AI counsellor, real counsellor, user accounts, persistent database, or delivered enquiry form. Live Tulu requires the Netlify function and its `GEMINI_API_KEY` secret; without them, it falls back to local page search.

@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  included_files = ["data/colleges.json"]
+
+[[redirects]]
+  from = "/api/tulu"
+  to = "/.netlify/functions/tulu"
+  status = 200
+  force = true

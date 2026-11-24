@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#040711">
-  <meta name="description" content="Explore a starter directory of Dehradun colleges. Search listed programs and verify current details with each institution.">
+  <meta name="description" content="Explore Dehradun colleges, search listed programs, and ask Tulu about the information on this page.">
   <meta property="og:title" content="desired.edu — Find Your College in Dehradun">
   <meta property="og:description" content="Explore 28 Dehradun college records and search their listed programs. Verify details with each institution.">
   <meta property="og:type" content="website">
@@ -34,6 +34,7 @@
       <div class="nav__links" id="navLinks">
         <a href="#finder">College Finder</a>
         <a href="#colleges">All Colleges</a>
+        <a href="#tulu">Ask Tulu</a>
         <a href="#how">How it works</a>
         <a href="#inquiry">Enquire</a>
       </div>
@@ -145,6 +146,18 @@
     </section>
 
     <section class="closing shell"><div class="closing__inner"><p class="kicker">Next steps</p><h2>Make the directory<br><em>decision-ready.</em></h2><p>Start by verifying source data and connecting the services this prototype does not have yet.</p><a class="button" href="docs/WHAT_IS_LEFT.md">See the build roadmap <span>→</span></a></div></section>
+  <section class="tulu section shell" id="tulu" aria-labelledby="tuluTitle">
+    <div class="section__intro"><p class="kicker">Your page guide</p><h2 id="tuluTitle">Meet <em>Tulu.</em></h2><p>Ask about this page, its college list, and the programs recorded in the directory. When live AI is enabled, answers use this page’s data and link back to the relevant record.</p></div>
+    <div class="tulu__panel glass-card">
+      <div class="tulu__header"><span class="tulu__avatar" aria-hidden="true">T</span><div><strong>Tulu</strong><span id="tuluStatus">Page guide · local data</span></div><span class="tulu__online" aria-hidden="true"></span></div>
+      <div class="tulu__messages" id="tuluMessages" role="log" aria-live="polite" aria-relevant="additions text">
+        <div class="tulu-message tulu-message--assistant"><p>Hi, I’m Tulu. Ask me about the colleges and program text listed on this page. This directory is unverified, so I’ll point out what still needs checking.</p></div>
+      </div>
+      <div class="tulu__prompts" aria-label="Suggested questions"><button type="button" data-tulu-prompt="Which colleges list engineering?">Colleges with engineering</button><button type="button" data-tulu-prompt="What information does this directory not verify?">What is unverified?</button></div>
+      <form class="tulu__form" id="tuluForm"><label class="sr-only" for="tuluInput">Ask Tulu a question about this page</label><textarea id="tuluInput" name="question" rows="1" maxlength="1200" placeholder="Ask about this page…" required></textarea><button class="button" type="submit" id="tuluSend">Ask <span aria-hidden="true">↑</span></button></form>
+      <p class="tulu__note">Page information only. College data has not been independently verified. Don’t include personal or sensitive details. With live AI enabled, your question is sent to Google Gemini.</p>
+    </div>
+  </section>
   </main>
 
   <footer class="footer">
