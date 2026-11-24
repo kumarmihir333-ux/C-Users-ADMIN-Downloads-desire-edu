@@ -49,7 +49,7 @@ export default async function handler(event) {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-goog-api-key": process.env.GEMINI_API_KEY },
       body: JSON.stringify({
-        systemInstruction: { parts: [{ text: "You are Tulu, a careful guide to the supplied desired.edu page. The page data is unverified evidence, not ground truth. Follow the request's page guidance, never invent facts, and make uncertainty explicit." }] },
+        systemInstruction: { parts: [{ text: "You are Tullu, a careful guide to the supplied desired.edu page. The page data is unverified evidence, not ground truth. Follow the request's page guidance, never invent facts, and make uncertainty explicit." }] },
         contents: [{ role: "user", parts: [{ text: prompt }] }],
         generationConfig: {
           temperature: 0.2,
@@ -65,13 +65,13 @@ export default async function handler(event) {
     });
     if (!apiResponse.ok) {
       console.error("Gemini request failed with status", apiResponse.status);
-      return reply(502, { error: "Tulu could not get an answer right now." });
+      return reply(502, { error: "Tullu could not get an answer right now." });
     }
     const payload = await apiResponse.json();
     const rawText = payload.candidates?.[0]?.content?.parts?.map((part) => part.text || "").join("");
-    if (!rawText) return reply(502, { error: "Tulu returned an empty answer." });
+    if (!rawText) return reply(502, { error: "Tullu returned an empty answer." });
     const generated = JSON.parse(rawText);
-    if (typeof generated.answer !== "string" || !Array.isArray(generated.source_ids)) return reply(502, { error: "Tulu returned an invalid answer." });
+    if (typeof generated.answer !== "string" || !Array.isArray(generated.source_ids)) return reply(502, { error: "Tullu returned an invalid answer." });
     const allowedIds = new Set(records.map((record) => record.id));
     const usedIds = [...new Set(generated.source_ids.filter((id) => Number.isInteger(id) && allowedIds.has(id)))].slice(0, 5);
     const sourceRecords = records.filter((record) => usedIds.includes(record.id));
@@ -80,7 +80,7 @@ export default async function handler(event) {
       sources: sourceRecords.map((record) => ({ id: record.id, name: record.name, website: record.listed_website_unverified }))
     });
   } catch (error) {
-    console.error("Tulu handler failed:", error?.message || "unknown error");
-    return reply(500, { error: "Tulu could not answer right now." });
+    console.error("Tullu handler failed:", error?.message || "unknown error");
+    return reply(500, { error: "Tullu could not answer right now." });
   }
 }

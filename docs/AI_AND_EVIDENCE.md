@@ -1,21 +1,21 @@
-# Tulu and evidence policy
+# Tullu and evidence policy
 
-## What Tulu can do
+## What Tullu can do
 
-Tulu is a page guide for the local college directory. It has two modes:
+Tullu is a page guide for the local college directory. It has two modes:
 
-- On a static host without `/api/tulu`, a local keyword search can find record names, locations and listed program text and explain the dataset's limitations.
-- On Netlify, `netlify/functions/tulu.mjs` sends the visitor's current question and the server-loaded local dataset to Gemini. It does not send conversation history. Returned source IDs are checked against the dataset; the browser renders links using stored record names and website fields.
+- On a static host without `/api/tullu`, a local keyword search can find record names, locations and listed program text and explain the dataset's limitations.
+- On Netlify, `netlify/functions/tullu.mjs` sends the visitor's current question and the server-loaded local dataset to Gemini. It does not send conversation history. Returned source IDs are checked against the dataset; the browser renders links using stored record names and website fields.
 
 The Gemini integration uses Google's `generateContent` REST endpoint. Its key must be set as the Netlify environment variable `GEMINI_API_KEY`, never embedded in client code or committed. The optional `GEMINI_MODEL` variable overrides the default `gemini-2.5-flash`.
 
 ## Evidence boundaries
 
-All 28 current records are unverified seed data. Their linked websites are candidate links, not confirmed official or current sources. Tulu must label those links unverified and must not present listed program text as confirmed course availability.
+All 28 current records are unverified seed data. Their linked websites are candidate links, not confirmed official or current sources. Tullu must label those links unverified and must not present listed program text as confirmed course availability.
 
-The page has no verified fees, scholarships, eligibility rules, admission dates, recognition, rankings or placement outcomes. Tulu should say the page does not verify those facts instead of filling them from model knowledge. A model answer is not evidence and never changes a record's verification status.
+The page has no verified fees, scholarships, eligibility rules, admission dates, recognition, rankings or placement outcomes. Tullu should say the page does not verify those facts instead of filling them from model knowledge. A model answer is not evidence and never changes a record's verification status.
 
-The endpoint asks Gemini for JSON containing an answer and source record IDs. It discards IDs that do not exist in the server-loaded dataset and constructs links from stored records rather than accepting generated URLs. This reduces unsupported citations; it cannot guarantee every generated sentence is correct. Treat Tulu as a navigation aid, not admissions advice.
+The endpoint asks Gemini for JSON containing an answer and source record IDs. It discards IDs that do not exist in the server-loaded dataset and constructs links from stored records rather than accepting generated URLs. This reduces unsupported citations; it cannot guarantee every generated sentence is correct. Treat Tullu as a navigation aid, not admissions advice.
 
 ## Privacy and deployment
 

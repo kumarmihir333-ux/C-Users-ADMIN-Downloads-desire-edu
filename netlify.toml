@@ -6,7 +6,7 @@
   included_files = ["data/colleges.json"]
 
 [[redirects]]
-  from = "/api/tulu"
-  to = "/.netlify/functions/tulu"
+  from = "/api/tullu"
+  to = "/.netlify/functions/tullu"
   status = 200
   force = true

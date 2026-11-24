@@ -1,14 +1,14 @@
-const API_PATH = "/api/tulu";
+const API_PATH = "/api/tullu";
 
 function addMessage(container, text, kind, sources = []) {
   const message = document.createElement("div");
-  message.className = `tulu-message tulu-message--${kind}`;
+  message.className = `tullu-message tullu-message--${kind}`;
   const paragraph = document.createElement("p");
   paragraph.textContent = text;
   message.append(paragraph);
   if (sources.length) {
     const sourceList = document.createElement("div");
-    sourceList.className = "tulu-message__sources";
+    sourceList.className = "tullu-message__sources";
     for (const source of sources) {
       const link = document.createElement("a");
       link.href = source.website;
@@ -60,18 +60,18 @@ async function askLive(question) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ question })
   });
-  if (!response.ok) throw new Error(`Tulu endpoint returned ${response.status}.`);
+  if (!response.ok) throw new Error(`Tullu endpoint returned ${response.status}.`);
   const result = await response.json();
-  if (typeof result.answer !== "string" || !Array.isArray(result.sources)) throw new Error("Tulu returned an invalid answer.");
+  if (typeof result.answer !== "string" || !Array.isArray(result.sources)) throw new Error("Tullu returned an invalid answer.");
   return result;
 }
 
-export function setupTulu(records) {
-  const form = document.querySelector("#tuluForm");
-  const input = document.querySelector("#tuluInput");
-  const messages = document.querySelector("#tuluMessages");
-  const send = document.querySelector("#tuluSend");
-  const status = document.querySelector("#tuluStatus");
+export function setupTullu(records) {
+  const form = document.querySelector("#tulluForm");
+  const input = document.querySelector("#tulluInput");
+  const messages = document.querySelector("#tulluMessages");
+  const send = document.querySelector("#tulluSend");
+  const status = document.querySelector("#tulluStatus");
 
   async function submit(question) {
     const trimmed = question.trim();
@@ -99,7 +99,7 @@ export function setupTulu(records) {
     event.preventDefault();
     submit(input.value);
   });
-  document.querySelectorAll("[data-tulu-prompt]").forEach((button) => button.addEventListener("click", () => submit(button.dataset.tuluPrompt)));
+  document.querySelectorAll("[data-tullu-prompt]").forEach((button) => button.addEventListener("click", () => submit(button.dataset.tulluPrompt)));
   input.addEventListener("keydown", (event) => {
     if (event.key === "Enter" && !event.shiftKey) {
       event.preventDefault();

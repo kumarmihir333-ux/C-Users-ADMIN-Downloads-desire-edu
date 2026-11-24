@@ -1231,29 +1231,29 @@ h1,h2,h3,p {
   font-size:11px
 }
 
-/* Tulu, the page-grounded college guide */
-.tulu { padding-top:100px; padding-bottom:110px }
-.tulu .section__intro { max-width:690px; margin-bottom:32px }
-.tulu__panel { max-width:800px; overflow:hidden; padding:0; margin:0 auto; border-radius:22px }
-.tulu__header { display:flex; align-items:center; gap:12px; padding:19px 22px; border-bottom:1px solid var(--line,rgba(255,255,255,.1)) }
-.tulu__avatar { display:grid; place-items:center; width:42px; height:42px; border:1px solid rgba(246,158,11,.42); border-radius:14px; color:#ffc46b; background:rgba(246,158,11,.1); font-family:Georgia,serif; font-size:23px }
-.tulu__header div { display:grid; gap:3px }
-.tulu__header strong { font-size:14px }
-.tulu__header div span,.tulu__note { color:var(--muted,#97a7b7); font-size:11px }
-.tulu__online { width:8px; height:8px; margin-left:auto; border-radius:50%; background:#83d6a1; box-shadow:0 0 12px rgba(131,214,161,.5) }
-.tulu__messages { display:flex; flex-direction:column; gap:13px; min-height:205px; max-height:430px; overflow:auto; padding:22px }
-.tulu-message { max-width:88%; padding:12px 15px; border:1px solid rgba(255,255,255,.1); border-radius:5px 17px 17px 17px; background:rgba(255,255,255,.045); color:#eaf0f6; font-size:13px; line-height:1.65; overflow-wrap:anywhere }
-.tulu-message p { margin:0; white-space:pre-wrap }
-.tulu-message--user { align-self:flex-end; border-color:rgba(246,158,11,.22); border-radius:17px 5px 17px 17px; background:rgba(246,158,11,.1) }
-.tulu-message__sources { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px }
-.tulu-message__sources a { color:#ffc46b; font-size:11px; text-decoration:underline; text-underline-offset:3px }
-.tulu__prompts { display:flex; flex-wrap:wrap; gap:8px; padding:0 22px 14px }
-.tulu__prompts button { padding:8px 11px; border:1px solid rgba(255,255,255,.13); border-radius:999px; background:transparent; color:#d8e0e8; font:inherit; font-size:11px; cursor:pointer }
-.tulu__prompts button:hover { border-color:rgba(246,158,11,.55); color:#ffc46b }
-.tulu__form { display:flex; align-items:flex-end; gap:10px; margin:0 22px; padding:9px; border:1px solid rgba(255,255,255,.15); border-radius:15px; background:rgba(0,0,0,.22) }
-.tulu__form textarea { flex:1; min-height:40px; max-height:110px; resize:vertical; padding:10px 8px; border:0; outline:0; color:#f2f5f8; background:transparent; font:inherit; font-size:13px }
-.tulu__form .button { flex-shrink:0; padding:10px 15px }
-.tulu__note { margin:12px 24px 18px; line-height:1.55 }
-.tulu__form button:disabled { opacity:.6; cursor:wait }
+/* Tullu, the page-grounded college guide */
+.tullu { padding-top:100px; padding-bottom:110px }
+.tullu .section__intro { max-width:690px; margin-bottom:32px }
+.tullu__panel { max-width:800px; overflow:hidden; padding:0; margin:0 auto; border-radius:22px }
+.tullu__header { display:flex; align-items:center; gap:12px; padding:19px 22px; border-bottom:1px solid var(--line,rgba(255,255,255,.1)) }
+.tullu__avatar { display:grid; place-items:center; width:42px; height:42px; border:1px solid rgba(246,158,11,.42); border-radius:14px; color:#ffc46b; background:rgba(246,158,11,.1); font-family:Georgia,serif; font-size:23px }
+.tullu__header div { display:grid; gap:3px }
+.tullu__header strong { font-size:14px }
+.tullu__header div span,.tullu__note { color:var(--muted,#97a7b7); font-size:11px }
+.tullu__online { width:8px; height:8px; margin-left:auto; border-radius:50%; background:#83d6a1; box-shadow:0 0 12px rgba(131,214,161,.5) }
+.tullu__messages { display:flex; flex-direction:column; gap:13px; min-height:205px; max-height:430px; overflow:auto; padding:22px }
+.tullu-message { max-width:88%; padding:12px 15px; border:1px solid rgba(255,255,255,.1); border-radius:5px 17px 17px 17px; background:rgba(255,255,255,.045); color:#eaf0f6; font-size:13px; line-height:1.65; overflow-wrap:anywhere }
+.tullu-message p { margin:0; white-space:pre-wrap }
+.tullu-message--user { align-self:flex-end; border-color:rgba(246,158,11,.22); border-radius:17px 5px 17px 17px; background:rgba(246,158,11,.1) }
+.tullu-message__sources { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px }
+.tullu-message__sources a { color:#ffc46b; font-size:11px; text-decoration:underline; text-underline-offset:3px }
+.tullu__prompts { display:flex; flex-wrap:wrap; gap:8px; padding:0 22px 14px }
+.tullu__prompts button { padding:8px 11px; border:1px solid rgba(255,255,255,.13); border-radius:999px; background:transparent; color:#d8e0e8; font:inherit; font-size:11px; cursor:pointer }
+.tullu__prompts button:hover { border-color:rgba(246,158,11,.55); color:#ffc46b }
+.tullu__form { display:flex; align-items:flex-end; gap:10px; margin:0 22px; padding:9px; border:1px solid rgba(255,255,255,.15); border-radius:15px; background:rgba(0,0,0,.22) }
+.tullu__form textarea { flex:1; min-height:40px; max-height:110px; resize:vertical; padding:10px 8px; border:0; outline:0; color:#f2f5f8; background:transparent; font:inherit; font-size:13px }
+.tullu__form .button { flex-shrink:0; padding:10px 15px }
+.tullu__note { margin:12px 24px 18px; line-height:1.55 }
+.tullu__form button:disabled { opacity:.6; cursor:wait }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
-@media(max-width:600px) { .tulu { padding-top:72px; padding-bottom:78px } .tulu__messages { padding:16px; min-height:190px } .tulu__header { padding:16px } .tulu__prompts { padding:0 16px 12px } .tulu__form { margin:0 14px; gap:5px } .tulu__form .button { padding:9px 11px } .tulu__note { margin-right:16px; margin-left:16px } }
+@media(max-width:600px) { .tullu { padding-top:72px; padding-bottom:78px } .tullu__messages { padding:16px; min-height:190px } .tullu__header { padding:16px } .tullu__prompts { padding:0 16px 12px } .tullu__form { margin:0 14px; gap:5px } .tullu__form .button { padding:9px 11px } .tullu__note { margin-right:16px; margin-left:16px } }

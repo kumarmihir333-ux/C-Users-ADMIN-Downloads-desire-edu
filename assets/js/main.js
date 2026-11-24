@@ -3,7 +3,7 @@ import { setupFinder } from "./finder.js";
 import { setupDirectory } from "./directory.js";
 import { setupForms } from "./forms.js";
 import { setupNavigation } from "./navigation.js";
-import { setupTulu } from "./tulu.js";
+import { setupTullu } from "./tullu.js";
 
 async function startSite() {
   setupNavigation();
@@ -12,7 +12,7 @@ async function startSite() {
     const dataset = await loadCollegeDataset();
     setupFinder(dataset.records);
     setupDirectory(dataset);
-    setupTulu(dataset.records);
+    setupTullu(dataset.records);
   } catch (error) {
     document.querySelector("#matchCount").textContent = "College data unavailable";
     document.querySelector("#matchList").textContent = "See docs/DATA_MODEL.md for the expected data structure.";
