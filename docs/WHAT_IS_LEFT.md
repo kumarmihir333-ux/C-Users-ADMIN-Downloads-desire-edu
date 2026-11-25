@@ -1,13 +1,13 @@
 # What remains to build
 
-Status: **prototype with optional Gemini-backed Tullu**. The UI and data plumbing are present; this is not an operational counselling service or a verified college guide.
+Status: **prototype with optional Gemini + Google Search-backed Tullu**. The UI and data plumbing are present; this is not an operational counselling service or a verified college guide.
 
 ## Done
 
 - Responsive static landing page and mobile navigation.
 - Search/filter UI for 28 supplied records.
 - Clear data provenance and unverified status in the dataset.
-- Tullu page guide with local search fallback, optional Netlify Gemini function, unverified record links and no API key in browser code.
+- Tullu page guide with local search fallback, optional Netlify Gemini + Google Search function, grounded web citations and unverified record links and no API key in browser code.
 - Frontend-only enquiry form preview.
 
 ## Build next (priority order)
@@ -55,4 +55,4 @@ Status: **prototype with optional Gemini-backed Tullu**. The UI and data plumbin
 
 ## Not yet included
 
-There are no verified fees, scholarship details, admission deadlines, eligibility calculations, live scraping, AI counsellor, real counsellor, user accounts, persistent database, or delivered enquiry form. Live Tullu requires the Netlify function and its `GEMINI_API_KEY` secret; without them, it falls back to local page search.
+There are no verified fees, scholarship details, admission deadlines, eligibility calculations, live scraping, AI counsellor, real counsellor, user accounts, persistent database, or delivered enquiry form. Live Tullu web search requires the Netlify function and its `GEMINI_API_KEY` secret; without them, it falls back to local page search.

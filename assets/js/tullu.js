@@ -11,10 +11,15 @@ function addMessage(container, text, kind, sources = []) {
     sourceList.className = "tullu-message__sources";
     for (const source of sources) {
       const link = document.createElement("a");
-      link.href = source.website;
+      let sourceUrl;
+      try { sourceUrl = new URL(source.url || source.website); } catch { continue; }
+      if (sourceUrl.protocol !== "https:") continue;
+      link.href = sourceUrl.href;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.textContent = `${source.name} · listed website (unverified)`;
+      link.textContent = source.type === "directory" || !source.type
+        ? `${source.name} · directory link (unverified)`
+        : `${source.name} · web source`;
       sourceList.append(link);
     }
     message.append(sourceList);
@@ -82,7 +87,7 @@ export function setupTullu(records) {
     send.textContent = "Thinking…";
     try {
       const result = await askLive(trimmed);
-      status.textContent = "Gemini · page-grounded answers";
+      status.textContent = result.webSearchUsed ? "Gemini · page + live web" : "Gemini · page guide";
       addMessage(messages, result.answer, "assistant", result.sources);
     } catch {
       status.textContent = "Local page guide · Gemini not connected";

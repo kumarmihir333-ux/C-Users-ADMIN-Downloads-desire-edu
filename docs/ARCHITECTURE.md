@@ -14,7 +14,7 @@ index.html
         ├── navigation.js ── sticky nav + mobile menu
         ├── forms.js ── preview only; no network/storage
         └── tullu.js ── page-search fallback + POST /api/tullu
-netlify/functions/tullu.mjs ── Gemini proxy; API key stays server-side
+netlify/functions/tullu.mjs ── Gemini + Google Search proxy; key stays server-side
 ```
 
 ## Responsibilities
@@ -26,7 +26,7 @@ netlify/functions/tullu.mjs ── Gemini proxy; API key stays server-side
 - `assets/js/directory.js`: render the dataset using DOM text nodes and enable search/group filters.
 - `assets/js/forms.js`: show a local preview response only. It must not persist or transmit values.
 - `assets/js/tullu.js`: answer page questions with local record search when no API route is available. Live questions go to same-origin `/api/tullu`; do not send student details or conversation history.
-- `netlify/functions/tullu.mjs`: load the local dataset server-side, call Gemini with page-specific grounding instructions, validate model source IDs against real records, and return source links labelled unverified. It applies a best-effort per-instance request limit and a 1,200-character input cap.
+- `netlify/functions/tullu.mjs`: load the local dataset server-side, call Gemini with Google Search grounding and page-specific guidance, return web citations from grounding metadata, and label matched directory links unverified. It applies a best-effort per-instance request limit and a 1,200-character input cap.
 - `netlify.toml`: publish static files and route `/api/tullu` to the Netlify function.
 - `data/colleges_seed.json`: preserved input for audit; do not edit it to update the app.
 - `data/colleges.json`: normalized data consumed by the app.
